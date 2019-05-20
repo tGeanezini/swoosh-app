@@ -46,25 +46,27 @@
                 android:text="@string/mens_label"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:id="@+id/toggleButton" android:textOff="@string/mens_label" android:textOn="@string/mens_label"
+                android:id="@+id/mensLeagueButton" android:textOff="@string/mens_label"
+                android:textOn="@string/mens_label"
                 android:textColor="@android:color/white" android:fontFamily="@font/montserrat"
                 android:background="@drawable/swoosh_toggle" android:textAllCaps="false" android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" android:onClick="onMensClicked"/>
         <ToggleButton
                 android:text="@string/womens_label"
                 android:layout_width="match_parent"
-                android:layout_height="64dp" android:id="@+id/toggleButton2" android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp" android:textOff="@string/womens_label" android:textOn="@string/womens_label"
+                android:layout_height="64dp" android:id="@+id/womensLeagueButton" android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" android:textOff="@string/womens_label"
+                android:textOn="@string/womens_label"
                 android:textColor="@android:color/white" android:fontFamily="@font/montserrat"
                 android:background="@drawable/swoosh_toggle" android:textAllCaps="false" android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" android:onClick="onWomensClicked"/>
         <ToggleButton
                 android:text="@string/co_ed_label"
                 android:layout_width="match_parent"
-                android:layout_height="64dp" android:id="@+id/toggleButton3" android:textOff="@string/co_ed_label"
+                android:layout_height="64dp" android:id="@+id/coedLeagueButton" android:textOff="@string/co_ed_label"
                 android:textOn="@string/co_ed_label" android:textColor="@android:color/white"
                 android:background="@drawable/swoosh_toggle" android:textAllCaps="false" android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" android:onClick="onCoEdClicked"/>
     </LinearLayout>
     <Button
             android:text="@string/next_label"
