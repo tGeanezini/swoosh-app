@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".activities.SkillActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -42,25 +42,27 @@
         <ToggleButton
                 android:text="@string/begginer_label"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton4" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/beginnerSkillButton" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/white"
-                android:fontFamily="@font/montserrat" android:textOff="@string/begginer_label" android:textOn="@string/begginer_label"
-                android:layout_marginEnd="8dp"/>
+                android:fontFamily="@font/montserrat" android:textOff="@string/begginer_label"
+                android:textOn="@string/begginer_label"
+                android:layout_marginEnd="8dp" android:onClick="onBeginnerClick"/>
         <ToggleButton
                 android:text="@string/baller_label"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton5" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/ballerSkillButton" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/white"
-                android:fontFamily="@font/montserrat" android:textOff="@string/baller_label" android:textOn="@string/baller_label"
-                android:layout_marginStart="8dp"/>
+                android:fontFamily="@font/montserrat" android:textOff="@string/baller_label"
+                android:textOn="@string/baller_label"
+                android:layout_marginStart="8dp" android:onClick="onBallerClick"/>
     </LinearLayout>
     <Button
             android:text="@string/finish_label"
             android:layout_width="0dp"
             android:layout_height="64dp"
-            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/finishSkillButton" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp" android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView4" android:background="@drawable/swoosh_button"
             android:textColor="@android:color/white" android:fontFamily="@font/montserrat" android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" android:onClick="onFinishClick"/>
 </android.support.constraint.ConstraintLayout>
