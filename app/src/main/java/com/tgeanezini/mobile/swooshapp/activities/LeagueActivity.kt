@@ -18,6 +18,19 @@ class LeagueActivity : BaseActivity() {
         setContentView(R.layout.activity_league)
     }
 
+    // Métodos responsáveis por manter o estado da tela no caso de mudanças de instância (Ex.: rotacionar a tela)
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable(EXTRA_PLAYER, player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null) {
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)
+        }
+    }
+
     fun onMensClicked(view: View) {
         womensLeagueButton.isChecked = false
         coedLeagueButton.isChecked = false

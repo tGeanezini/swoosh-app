@@ -32,7 +32,9 @@
             style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/progressBar" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/> <!-- O tools faz com que as alterações só apareçam no modo de design -->
+            android:id="@+id/progressBar" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/searchingLeagueLabel"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+    <!-- O tools faz com que as alterações só apareçam no modo de design -->
 </android.support.constraint.ConstraintLayout>
