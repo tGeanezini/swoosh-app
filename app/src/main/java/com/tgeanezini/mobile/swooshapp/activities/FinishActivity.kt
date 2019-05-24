@@ -2,8 +2,8 @@ package com.tgeanezini.mobile.swooshapp.activities
 
 import android.os.Bundle
 import com.tgeanezini.mobile.swooshapp.R
-import com.tgeanezini.mobile.swooshapp.utils.EXTRA_LEAGUE
-import com.tgeanezini.mobile.swooshapp.utils.EXTRA_SKILL
+import com.tgeanezini.mobile.swooshapp.models.Player
+import com.tgeanezini.mobile.swooshapp.utils.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_finish.*
 
 class FinishActivity : BaseActivity() {
@@ -12,9 +12,8 @@ class FinishActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
 
-        val league = intent.getStringExtra(EXTRA_LEAGUE)
-        val skill = intent.getStringExtra(EXTRA_SKILL)
+        val player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
 
-        searchingLeagueLabel.text = "Looking for a $league $skill league near you..."
+        searchingLeagueLabel.text = "Looking for a ${player.league} ${player.skill} league near you..."
     }
 }
